@@ -1,7 +1,3 @@
-G:\Projects\FacilityOrMansion\obj\Debug\netstandard2.1\FacilityOrMansion.csproj.AssemblyReference.cache
-G:\Projects\FacilityOrMansion\obj\Debug\netstandard2.1\FacilityOrMansion.GeneratedMSBuildEditorConfig.editorconfig
-G:\Projects\FacilityOrMansion\obj\Debug\netstandard2.1\FacilityOrMansion.csproj.CoreCompileInputs.cache
-G:\Projects\FacilityOrMansion\obj\Debug\netstandard2.1\FacilityOrMansion.sourcelink.json
 G:\Projects\FacilityOrMansion\bin\Debug\netstandard2.1\FacilityOrMansion.deps.json
 G:\Projects\FacilityOrMansion\bin\Debug\netstandard2.1\FacilityOrMansion.dll
 G:\Projects\FacilityOrMansion\bin\Debug\netstandard2.1\FacilityOrMansion.pdb
@@ -41,6 +37,10 @@ G:\Projects\FacilityOrMansion\bin\Debug\netstandard2.1\Unity.Services.Core.Inter
 G:\Projects\FacilityOrMansion\bin\Debug\netstandard2.1\Unity.Services.Core.dll
 G:\Projects\FacilityOrMansion\bin\Debug\netstandard2.1\Unity.Timeline.dll
 G:\Projects\FacilityOrMansion\bin\Debug\netstandard2.1\Unity.Profiling.Core.dll
+G:\Projects\FacilityOrMansion\obj\Debug\netstandard2.1\FacilityOrMansion.csproj.AssemblyReference.cache
+G:\Projects\FacilityOrMansion\obj\Debug\netstandard2.1\FacilityOrMansion.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\FacilityOrMansion\obj\Debug\netstandard2.1\FacilityOrMansion.csproj.CoreCompileInputs.cache
+G:\Projects\FacilityOrMansion\obj\Debug\netstandard2.1\FacilityOrMansion.sourcelink.json
 G:\Projects\FacilityOrMansion\obj\Debug\netstandard2.1\FacilityOrMansion.csproj.CopyComplete
 G:\Projects\FacilityOrMansion\obj\Debug\netstandard2.1\FacilityOrMansion.dll
 G:\Projects\FacilityOrMansion\obj\Debug\netstandard2.1\FacilityOrMansion.pdb
