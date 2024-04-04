@@ -13,8 +13,10 @@ namespace FacilityOrMansion.Patches
 			{
 				IntWithRarity intWithRarity = new IntWithRarity();
 				intWithRarity.id = i;
-				FacilityOrMansionBase.mls.LogInfo("DungeonFlow Name = " + manager.dungeonFlowTypes[i].name);
-				if (manager.dungeonFlowTypes[i].name == "Level2Flow")
+                
+
+                FacilityOrMansionBase.mls.LogInfo("DungeonFlow Name = " + manager.dungeonFlowTypes[i].dungeonFlow.name);
+				if (manager.dungeonFlowTypes[i].dungeonFlow.name == "Level2Flow")
                 {
                     if (FacilityOrMansionBase.mansionOnly.Value && FacilityOrMansionBase.facilityOnly.Value)
                     {
