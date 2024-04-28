@@ -8,7 +8,7 @@ using FacilityOrMansion.Patches;
 namespace FacilityOrMansion
 {
 	// Token: 0x02000002 RID: 2
-	[BepInPlugin("DeathWrench.FacilityOrMansion", "Facility or Mansion", "1.0.0")]
+	[BepInPlugin("dsrdakota.FacilityOrMansion", "Facility or Mansion", "1.0.2")]
 	public class FacilityOrMansionBase : BaseUnityPlugin
 	{
 		public static FacilityOrMansionBase Instance { get; private set; }
@@ -29,6 +29,6 @@ namespace FacilityOrMansion
 			FacilityOrMansionBase.mls.LogInfo("Facility or Mansion Only mod has awakened!");
 			this.harmony.PatchAll(typeof(DungeonFlowTypePatch));
 		}
-		private readonly Harmony harmony = new Harmony("DeathWrench.FacilityOrMansion");
+		private readonly Harmony harmony = new Harmony("dsrdakota.FacilityOrMansion");
 	}
 }
