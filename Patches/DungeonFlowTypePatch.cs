@@ -40,8 +40,9 @@ namespace FacilityOrMansion.Patches
 		{
             if (FacilityOrMansionBase.modIsEnabled.Value) 
 			{ 
-				List<DungeonFlow> list = new List<DungeonFlow>();
+				List<IndoorMapType> list = new List<IndoorMapType>();
 				FacilityOrMansionBase.mls.LogInfo("Inserting missing dungeon flows into the RoundManager");
+<<<<<<< Updated upstream
                 list.AddRange(Resources.FindObjectsOfTypeAll<DungeonFlow>());
 				List<DungeonFlow> list2 = ToDungeonFlowList(__instance.dungeonFlowTypes);
                 for (int i = 0; i < list.Count; i++)
@@ -51,6 +52,32 @@ namespace FacilityOrMansion.Patches
                 }
 				//__instance.dungeonFlowTypes = list2.ToArray();
 				ToIndoorMapArray(__instance, list2);
+=======
+				List<IndoorMapType> list2 = __instance.dungeonFlowTypes.ToList<IndoorMapType>();
+
+				//foreach (var item in UnityEngine.Object.FindObjectsOfType(typeof(IndoorMapType))) {
+				foreach (var item in Resources.FindObjectsOfTypeAll(typeof(IndoorMapType))) {
+					Type type = item.GetType();
+					DungeonFlow dun = (DungeonFlow)type.GetProperty("dungeonFlow").GetValue(type);
+					float size = (float)type.GetProperty("MapTileSize").GetValue(type);
+					FacilityOrMansionBase.mls.LogInfo("mapsize: " + size.ToString());
+					
+					IndoorMapType map = new IndoorMapType();
+					map.dungeonFlow = dun;
+					map.MapTileSize = size;
+
+					FacilityOrMansionBase.mls.LogInfo("map name: " + dun.name);
+					list.Add(map);
+				}
+
+				//list.AddRange(Resources.FindObjectsOfTypeAll(typeof(IndoorMapType)));
+				for (int i = 0; i < list.Count; i++)
+				{
+					IndoorMapType item = list[i];
+					list2.Add(item);
+				}
+				__instance.dungeonFlowTypes = list2.ToArray();
+>>>>>>> Stashed changes
             }
         }
 		[HarmonyPatch(typeof(RoundManager), "GenerateNewFloor")]

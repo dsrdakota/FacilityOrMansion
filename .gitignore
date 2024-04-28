@@ -1,4 +1,5 @@
 
+<<<<<<< Updated upstream
 .vs/FacilityOrMansion/FileContentIndex/64515e1a-c4ef-4134-9666-699e45df526c.vsidx
 .vs/FacilityOrMansion/FileContentIndex/b650c1c7-d6cf-4ed9-82ce-9f703ea7bb2f.vsidx
 .vs/FacilityOrMansion/DesignTimeBuild/.dtbcache.v2
@@ -9,3 +10,9 @@ Deps/UnityMDK.dll
 Build/
 /dsrdakota-FacilityOrMansion
 obj/Debug/netstandard2.1/FacilityOrMansion.csproj.AssemblyReference.cache
+=======
+/.vs
+>>>>>>> Stashed changes
+/obj
+/obj
+/bin
